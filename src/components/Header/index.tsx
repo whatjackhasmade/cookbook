@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import * as S from "./styles";
+import CreateButton from "./CreateButton";
 
 export default function Header() {
 	return (
@@ -19,8 +20,8 @@ export default function Header() {
 						label: "Recipes",
 					},
 					{
-						href: "/login",
-						label: "Login",
+						href: "/create",
+						label: "Create",
 					},
 				].map(({ href, label }) => (
 					<Link key={href} href={href}>

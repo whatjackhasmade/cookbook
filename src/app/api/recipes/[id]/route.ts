@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
 import { getPrismaClient } from "@/lib/prisma";
 
-export async function GET() {
+export async function GET(req: Request) {
 	const prisma = getPrismaClient();
-	const recipes = await prisma.recipe.findMany();
+	const { id } = await req.json();
+
+	const recipes = await prisma.recipe.findUnique({
+		where: {
+			id,
+		},
+	});
 
 	return NextResponse.json(recipes, { status: 200 });
 }
@@ -13,14 +19,13 @@ export async function PATCH(
 	{ params: { id } }: { params: { id: string } }
 ) {
 	const prisma = getPrismaClient();
-	const { content, title } = await req.json();
+	const { title } = await req.json();
 
 	await prisma.recipe.update({
 		where: {
 			id: id,
 		},
 		data: {
-			content,
 			title,
 		},
 	});
