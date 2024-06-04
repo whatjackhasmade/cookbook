@@ -33,6 +33,46 @@ const recipe: Recipe = {
 	],
 	ingredients: [
 		{
+			quantity: "10",
+			name: "Vegetable stock (cube or other)",
+			unit: MeasurementUnit.Grams,
+		},
+		{
+			quantity: "1 splash",
+			name: "Worcestershire sauce",
+			unit: MeasurementUnit.Count,
+		},
+		{
+			quantity: "4",
+			name: "Paprika",
+			unit: MeasurementUnit.Grams,
+		},
+		{
+			quantity: "1 generous pinch",
+			name: "Mixed herbs",
+			unit: MeasurementUnit.Count,
+		},
+		{
+			quantity: "1 pinch",
+			name: "Salt",
+			unit: MeasurementUnit.Count,
+		},
+		{
+			quantity: "1 pinch",
+			name: "Black pepper",
+			unit: MeasurementUnit.Count,
+		},
+		{
+			quantity: "2 tins",
+			name: "Chopped tomatoes",
+			unit: MeasurementUnit.Count,
+		},
+		{
+			quantity: "1 pinch (optional)",
+			name: "All purpose seasoning",
+			unit: MeasurementUnit.Count,
+		},
+		{
 			name: "Celery",
 			quantity: "4",
 			unit: MeasurementUnit.Count,
