@@ -22,17 +22,20 @@ const recipe: Recipe = {
 			unit: MeasurementUnit.Tablespoons,
 		},
 		{
-			name: "Parmesan cheese (optional)",
+			name: "Parmesan cheese",
+			optional: true,
 			quantity: "15",
 			unit: MeasurementUnit.Grams,
 		},
 		{
-			name: "Corriander (optional)",
+			name: "Corriander",
+			optional: true,
 			quantity: "10",
 			unit: MeasurementUnit.Grams,
 		},
 		{
-			name: "Lemon (optional)",
+			name: "Lemon",
+			optional: true,
 			quantity: "1",
 			unit: MeasurementUnit.Count,
 		},
@@ -47,7 +50,8 @@ const recipe: Recipe = {
 			unit: MeasurementUnit.Grams,
 		},
 		{
-			name: "All purpose seasoning (optional)",
+			name: "All purpose seasoning",
+			optional: true,
 			quantity: "1",
 			unit: MeasurementUnit.Teaspoons,
 		},

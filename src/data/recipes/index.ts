@@ -6,6 +6,7 @@ import sweetPotatoFriesFish from "./sweet-potato-fries-fish";
 
 export type Ingredient = {
 	name: string;
+	optional?: boolean;
 	quantity: string;
 	unit: MeasurementUnit;
 };

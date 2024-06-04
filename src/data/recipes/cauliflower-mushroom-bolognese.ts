@@ -68,8 +68,9 @@ const recipe: Recipe = {
 			unit: MeasurementUnit.Count,
 		},
 		{
-			quantity: "1 pinch (optional)",
+			quantity: "1 pinch",
 			name: "All purpose seasoning",
+			optional: true,
 			unit: MeasurementUnit.Count,
 		},
 		{
@@ -128,7 +129,8 @@ const recipe: Recipe = {
 			unit: MeasurementUnit.Milliliters,
 		},
 		{
-			name: "Cream cheese (optional)",
+			name: "Cream cheese",
+			optional: true,
 			quantity: "5",
 			unit: MeasurementUnit.Tablespoons,
 		},
