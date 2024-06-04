@@ -1,5 +1,4 @@
-"use client";
-
+import { Dispatch, SetStateAction } from "react";
 import * as S from "./styles";
 import { Ingredient } from "@/data/recipes";
 
@@ -10,7 +9,7 @@ export default function Ingredients({
 	ingredients,
 }: {
 	checkedIngredients: string[];
-	setCheckedIngredients: (ingredients: string[]) => void;
+	setCheckedIngredients: Dispatch<SetStateAction<string[]>>;
 	onClickStartCooking: () => void;
 	ingredients: Ingredient[];
 }) {
@@ -26,13 +25,11 @@ export default function Ingredients({
 							id={ingredient.name}
 							type="checkbox"
 							onChange={(event) => {
-								const { checked } = event.target;
-
-								const newIngredients = checked
-									? [...checkedIngredients, ingredient.name]
-									: checkedIngredients.filter((id) => id !== ingredient.name);
-
-								setCheckedIngredients(newIngredients);
+								setCheckedIngredients((currentChecked) =>
+									event.target.checked
+										? [...currentChecked, ingredient.name]
+										: currentChecked.filter((id) => id !== ingredient.name)
+								);
 							}}
 						/>
 						<label htmlFor={ingredient.name}>
