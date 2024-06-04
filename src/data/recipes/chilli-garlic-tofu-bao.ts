@@ -2,8 +2,9 @@ import { MeasurementUnit } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	emojis: "🌶️ 🍞",
 	slug: "chilli-garlic-tofu-bao",
-	title: "CHILLI GARLIC TOFU BAO 🌶️ (makes 8)",
+	title: "Chilli garlic tofu bao",
 	ingredients: [
 		{
 			name: "firm tofu",
@@ -38,7 +39,7 @@ const recipe: Recipe = {
 		{
 			name: "water",
 			quantity: "70",
-			unit: MeasurementUnit.Millimeters,
+			unit: MeasurementUnit.Milliliters,
 		},
 		{
 			name: "cornstarch",
@@ -73,7 +74,7 @@ const recipe: Recipe = {
 		{
 			name: "warm water",
 			quantity: "70",
-			unit: MeasurementUnit.Millimeters,
+			unit: MeasurementUnit.Milliliters,
 		},
 	],
 	steps: [

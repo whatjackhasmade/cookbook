@@ -2,6 +2,7 @@ import { MeasurementUnit } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
+	emojis: "🍠 🐟",
 	slug: "sweet-potato-fries-and-fish",
 	title: "Sweet potato fries and fish",
 	ingredients: [

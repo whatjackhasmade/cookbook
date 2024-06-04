@@ -5,7 +5,9 @@ export default async function Recipes() {
 	return recipes.map((recipe) => (
 		<article key={recipe.slug}>
 			<Link href={`/recipes/${recipe.slug}`}>
-				<h2>{recipe.title}</h2>
+				<h2>
+					<span role="img">{recipe.emojis}</span> ~ {recipe.title}
+				</h2>
 			</Link>
 		</article>
 	));

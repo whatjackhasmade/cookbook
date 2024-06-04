@@ -14,6 +14,7 @@ export type Step = {
 };
 
 export type Recipe = {
+	emojis?: string;
 	title: string;
 	ingredients: Ingredient[];
 	steps: Step[];

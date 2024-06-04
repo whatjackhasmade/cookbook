@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-
 import * as S from "./styles";
 import Ingredients from "./Ingredients";
 import Steps from "./Steps";
 import { Recipe as RecipeType } from "@/data/recipes";
+import Link from "next/link";
+import { useRecipe, withRecipeContext } from "./context";
+import Progress from "./Progress";
 
 export interface RecipeFormSchema {
 	ingredients: string[];
@@ -15,32 +16,27 @@ interface RecipeProps {
 	recipe: RecipeType;
 }
 
-export default function Recipe({ recipe }: RecipeProps) {
-	const [isStartingCooking, setIsStartingCooking] = useState(false);
-	const [checkedIngredients, setCheckedIngredients] = useState<string[]>([]);
+function Recipe({ recipe }: RecipeProps) {
+	const { stage } = useRecipe();
 
 	return (
 		<>
-			<h1>{recipe.title || "Recipe"}</h1>
+			<S.Title>{recipe.title}</S.Title>
+			<Progress />
 			<S.Contents>
-				{isStartingCooking ? (
-					<Steps
-						steps={recipe.steps}
-						onClickExitCooking={() => {
-							setIsStartingCooking(false);
-						}}
-					/>
-				) : (
-					<Ingredients
-						ingredients={recipe.ingredients}
-						checkedIngredients={checkedIngredients}
-						setCheckedIngredients={setCheckedIngredients}
-						onClickStartCooking={() => {
-							setIsStartingCooking(true);
-						}}
-					/>
-				)}
+				{(() => {
+					switch (stage) {
+						case 0:
+							return <Ingredients />;
+						case 1:
+							return <Steps />;
+						default:
+							return null;
+					}
+				})()}
 			</S.Contents>
 		</>
 	);
 }
+
+export default withRecipeContext(Recipe);

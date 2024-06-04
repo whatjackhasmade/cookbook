@@ -1,18 +1,11 @@
-import { Step } from "@/data/recipes";
+import { useRecipe } from "../context";
 
-export default function Steps({
-	steps,
-	onClickExitCooking,
-}: {
-	steps: Step[];
-	onClickExitCooking: () => void;
-}) {
+export default function Steps() {
+	const { recipe } = useRecipe();
+	const { steps } = recipe;
+
 	return (
 		<section>
-			<button onClick={onClickExitCooking} type="button">
-				Exit cooking
-			</button>
-
 			<h2>Steps</h2>
 
 			<ol>

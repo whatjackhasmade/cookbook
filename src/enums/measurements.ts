@@ -1,7 +1,7 @@
 export enum MeasurementUnit {
 	Count = "count",
 	Grams = "grams",
-	Millimeters = "millimeters",
+	Milliliters = "milliliters",
 	Tablespoons = "tablespoons",
 	Teaspoons = "teaspoons",
 	Litres = "litres",
