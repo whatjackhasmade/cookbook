@@ -1,7 +1,8 @@
 import { MeasurementUnit } from "@/enums";
 
+import cauliflowerMushroomBolognese from "./cauliflower-mushroom-bolognese";
 import chilliGarlicTofuBao from "./chilli-garlic-tofu-bao";
-import sweetPotatoFriesAndFish from "./sweet-potato-fries-and-fish";
+import sweetPotatoFriesFish from "./sweet-potato-fries-fish";
 
 export type Ingredient = {
 	name: string;
@@ -14,11 +15,20 @@ export type Step = {
 };
 
 export type Recipe = {
+	description?: string;
 	emojis?: string;
 	title: string;
 	ingredients: Ingredient[];
+	// Number of servings yielded by the recipe
+	servingSize?: number;
 	steps: Step[];
 	slug: string;
+	// Time in minutes
+	time?: number;
 };
 
-export const recipes: Recipe[] = [chilliGarlicTofuBao, sweetPotatoFriesAndFish];
+export const recipes: Recipe[] = [
+	cauliflowerMushroomBolognese,
+	chilliGarlicTofuBao,
+	sweetPotatoFriesFish,
+];
