@@ -3,8 +3,6 @@ import { Recipe } from ".";
 
 const recipe: Recipe = {
   emojis: "🌯",
-  slug: RecipeSlug.Fajitas,
-  title: "Fajitas",
   ingredients: [
     {
       name: "All purpose flour",
@@ -32,6 +30,8 @@ const recipe: Recipe = {
       unit: MeasurementUnit.Milliliters,
     },
   ],
+  related: [RecipeSlug.ChipotleMushroomFajitas],
+  slug: RecipeSlug.Fajitas,
   steps: [
     {
       content: "In a large bowl, whisk together the flour, salt, and baking powder",
@@ -64,7 +64,7 @@ const recipe: Recipe = {
       content: "When the skillet is hot, add a tortilla and cook for 20-30 seconds on each side",
     },
   ],
-  related: [RecipeSlug.ChipotleMushroomFajitas],
+  title: "Fajitas",
   youtube: "https://youtu.be/ynexTOjHbRs?t=75",
 };
 

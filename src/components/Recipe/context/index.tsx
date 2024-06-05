@@ -47,8 +47,10 @@ export const RecipeProvider = ({
 		<RecipeContext.Provider
 			value={{
 				checkedIngredients,
+				goToNextStage,
+				goToPreviousStage,
+				goToStage,
 				recipe,
-				stage,
 				setCheckedIngredients: (newChecked) => {
 					setCheckedIngredients(newChecked);
 
@@ -56,9 +58,7 @@ export const RecipeProvider = ({
 						goToNextStage();
 					}
 				},
-				goToStage,
-				goToNextStage,
-				goToPreviousStage,
+				stage,
 			}}
 		>
 			{children}

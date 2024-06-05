@@ -3,8 +3,6 @@ import { Recipe } from ".";
 
 const recipe: Recipe = {
   emojis: "🌶️ 🍞",
-  slug: RecipeSlug.ChilliGarlicTofuBao,
-  title: "Chilli garlic tofu bao",
   ingredients: [
     {
       name: "firm tofu",
@@ -77,6 +75,7 @@ const recipe: Recipe = {
       unit: MeasurementUnit.Milliliters,
     },
   ],
+  slug: RecipeSlug.ChilliGarlicTofuBao,
   steps: [
     {
       content: "For the dough: mix the yeast sugar & water in a jug then set aside to sit until foamy on top",
@@ -114,6 +113,7 @@ const recipe: Recipe = {
       content: "Remove the lid & keep frying until the bottoms are golden & crisp then serve topped with chilli oil, spring onion & sesame seeds",
     },
   ],
+  title: "Chilli garlic tofu bao",
 };
 
 export default recipe;

@@ -5,10 +5,7 @@ import { Recipe } from ".";
 
 const recipe: Recipe = {
   description: "These super savoury tacos are an absolute godsend.",
-  servingSize: 2,
-  time: 55,
   emojis: "🌯 🌶",
-  related: [RecipeSlug.Fajitas],
   ingredients: [
     {
       name: "Ground coriander",
@@ -71,8 +68,9 @@ const recipe: Recipe = {
       unit: MeasurementUnit.Grams,
     },
   ],
+  related: [RecipeSlug.Fajitas],
+  servingSize: 2,
   slug: RecipeSlug.ChipotleMushroomFajitas,
-  title: "Chipotle mushroom fajitas",
   steps: [
     {
       content: "Preheat the oven to 220°C.",
@@ -103,6 +101,8 @@ const recipe: Recipe = {
     { content: "Pull your mushrooms out of the oven and rest for a couple of minutes. Shred with a couple of forks." },
     { content: "Build your tacos up with plenty of caramelised onions, pulled ’shrooms, slaw and a squeeze of lime. Get stuck in." },
   ],
+  time: 55,
+  title: "Chipotle mushroom fajitas",
 };
 
 export default recipe;

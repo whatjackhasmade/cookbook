@@ -10,8 +10,8 @@ import Main from "@/components/Main";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Cookbook",
 	description: "Save your recipes",
+	title: "Cookbook",
 };
 
 export default function RootLayout({

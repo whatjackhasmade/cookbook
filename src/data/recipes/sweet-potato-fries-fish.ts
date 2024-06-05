@@ -3,8 +3,6 @@ import { Recipe } from ".";
 
 const recipe: Recipe = {
   emojis: "🍠 🐟",
-  slug: RecipeSlug.SweetPotatoFriesFish,
-  title: "Sweet potato fries and fish",
   ingredients: [
     {
       name: "Fish",
@@ -61,6 +59,7 @@ const recipe: Recipe = {
       unit: MeasurementUnit.Tablespoons,
     },
   ],
+  slug: RecipeSlug.SweetPotatoFriesFish,
   steps: [
     {
       content: "Preheat the oven to 200°C",
@@ -84,6 +83,7 @@ const recipe: Recipe = {
       content: "Serve the sweet potatoes and fish with mayonnaise or sweet chilli sauce",
     },
   ],
+  title: "Sweet potato fries and fish",
 };
 
 export default recipe;
