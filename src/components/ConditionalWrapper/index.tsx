@@ -1,11 +1,11 @@
 export default function ConditionalWrapper({
-	children,
-	condition,
-	wrapper,
+  children,
+  condition,
+  wrapper,
 }: {
-	children: React.ReactNode;
-	condition: boolean;
-	wrapper: (children: React.ReactNode) => React.ReactNode;
-}) {
-	return condition ? wrapper(children) : children;
+  children: React.ReactElement;
+  condition: boolean;
+  wrapper: (children: React.ReactElement) => React.ReactElement;
+}): React.ReactElement {
+  return condition ? wrapper(children) : children;
 }

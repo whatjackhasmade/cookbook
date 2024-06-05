@@ -1,7 +1,7 @@
 import { recipes } from "@/data/recipes";
 import Link from "next/link";
 
-export default async function Recipes() {
+export default function Recipes() {
   return (
     <>
       {recipes.map((recipe) => (
