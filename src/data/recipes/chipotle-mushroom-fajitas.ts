@@ -71,7 +71,7 @@ const recipe: Recipe = {
       unit: MeasurementUnit.Grams,
     },
   ],
-  slug: RecipeSlug.Fajitas,
+  slug: RecipeSlug.ChipotleMushroomFajitas,
   title: "Chipotle mushroom fajitas",
   steps: [
     {
