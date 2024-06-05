@@ -14,13 +14,13 @@ export default function Related({ related }: RelatedProps) {
   const relatedRecipes = related.map((slug) => recipes.find((recipe) => recipe.slug === slug)).filter(isNotNullish);
 
   return (
-    <>
+    <section>
+      <h2>Related Recipes</h2>
       {relatedRecipes.map((recipe) => (
         <Link href={`/recipes/${recipe.slug}`} key={recipe.slug}>
           <h3>{recipe.title}</h3>
-          <p>{recipe.description}</p>
         </Link>
       ))}
-    </>
+    </section>
   );
 }

@@ -36,6 +36,7 @@ function Recipe({ recipe }: RecipeProps) {
           }
         })()}
       </S.Contents>
+      <hr />
       {recipe.related && <Related related={recipe.related} />}
     </>
   );
