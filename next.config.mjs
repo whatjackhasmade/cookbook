@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	compiler: {
+  output: "export",
+  compiler: {
     styledComponents: true,
   },
 };
