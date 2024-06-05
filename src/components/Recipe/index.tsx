@@ -7,36 +7,38 @@ import { Recipe as RecipeType } from "@/data/recipes";
 import Link from "next/link";
 import { useRecipe, withRecipeContext } from "./context";
 import Progress from "./Progress";
+import Related from "./Related";
 
 export interface RecipeFormSchema {
-	ingredients: string[];
+  ingredients: string[];
 }
 
 interface RecipeProps {
-	recipe: RecipeType;
+  recipe: RecipeType;
 }
 
 function Recipe({ recipe }: RecipeProps) {
-	const { stage } = useRecipe();
+  const { stage } = useRecipe();
 
-	return (
-		<>
-			<S.Title>{recipe.title}</S.Title>
-			<Progress />
-			<S.Contents>
-				{(() => {
-					switch (stage) {
-						case 0:
-							return <Ingredients />;
-						case 1:
-							return <Steps />;
-						default:
-							return null;
-					}
-				})()}
-			</S.Contents>
-		</>
-	);
+  return (
+    <>
+      <S.Title>{recipe.title}</S.Title>
+      <Progress />
+      <S.Contents>
+        {(() => {
+          switch (stage) {
+            case 0:
+              return <Ingredients />;
+            case 1:
+              return <Steps />;
+            default:
+              return null;
+          }
+        })()}
+      </S.Contents>
+      {recipe.related && <Related related={recipe.related} />}
+    </>
+  );
 }
 
 export default withRecipeContext(Recipe);
