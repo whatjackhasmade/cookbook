@@ -1,5 +1,6 @@
 import { MeasurementUnit, RecipeSlug } from "@/enums";
 
+import briocheBuns from "./brioche-buns";
 import cauliflowerMushroomBolognese from "./cauliflower-mushroom-bolognese";
 import chilliGarlicTofuBao from "./chilli-garlic-tofu-bao";
 import chipotleMushroomFajitas from "./chipotle-mushroom-fajitas";
@@ -32,4 +33,4 @@ export type Recipe = {
   youtube?: string;
 };
 
-export const recipes: Recipe[] = [cauliflowerMushroomBolognese, chilliGarlicTofuBao, chipotleMushroomFajitas, fajitas, sweetPotatoFriesFish];
+export const recipes: Recipe[] = [briocheBuns, cauliflowerMushroomBolognese, chilliGarlicTofuBao, chipotleMushroomFajitas, fajitas, sweetPotatoFriesFish];
