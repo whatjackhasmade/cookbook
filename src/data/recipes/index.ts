@@ -27,6 +27,7 @@ export type Recipe = {
   slug: RecipeSlug;
   // Time in minutes
   time?: number;
+  youtube?: string;
 };
 
 export const recipes: Recipe[] = [cauliflowerMushroomBolognese, chilliGarlicTofuBao, sweetPotatoFriesFish];
