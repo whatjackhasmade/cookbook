@@ -1,17 +1,21 @@
 import { recipes } from "@/data/recipes";
+import { VisuallyHidden } from "../VisuallyHidden";
 import Link from "next/link";
+
+import * as S from "./styles";
 
 export default function Recipes() {
   return (
     <>
       {recipes.map((recipe) => (
-        <article key={recipe.slug}>
+        <S.Item key={recipe.slug}>
+          <h2>
+            <span role="img">{recipe.emojis}</span> ~ {recipe.title}
+          </h2>
           <Link href={`/recipes/${recipe.slug}`}>
-            <h2>
-              <span role="img">{recipe.emojis}</span> ~ {recipe.title}
-            </h2>
+            <VisuallyHidden>{recipe.title}</VisuallyHidden>
           </Link>
-        </article>
+        </S.Item>
       ))}
     </>
   );
