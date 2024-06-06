@@ -33,4 +33,11 @@ export type Recipe = {
   youtube?: string;
 };
 
-export const recipes: Recipe[] = [briocheBuns, cauliflowerMushroomBolognese, chilliGarlicTofuBao, chipotleMushroomFajitas, fajitas, sweetPotatoFriesFish];
+export const recipes: Recipe[] = [
+  briocheBuns,
+  cauliflowerMushroomBolognese,
+  chilliGarlicTofuBao,
+  chipotleMushroomFajitas,
+  fajitas,
+  sweetPotatoFriesFish,
+];

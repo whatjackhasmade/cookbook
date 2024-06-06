@@ -78,39 +78,48 @@ const recipe: Recipe = {
   slug: RecipeSlug.ChilliGarlicTofuBao,
   steps: [
     {
-      content: "For the dough: mix the yeast sugar & water in a jug then set aside to sit until foamy on top",
+      content:
+        "For the dough: mix the yeast sugar & water in a jug then set aside to sit until foamy on top",
     },
     {
-      content: "Mix the flour & salt in a mixing bowl, make a well in the centre then pour in the yeast mixture",
+      content:
+        "Mix the flour & salt in a mixing bowl, make a well in the centre then pour in the yeast mixture",
     },
     {
-      content: "Stir until a slightly sticky (but not wet) dough forms then transfer to a clean surface & knead for 5-10 minutes until smooth",
+      content:
+        "Stir until a slightly sticky (but not wet) dough forms then transfer to a clean surface & knead for 5-10 minutes until smooth",
     },
     {
-      content: "Return it to the bowl, cover & let it rest for about an hour until doubled in size",
+      content:
+        "Return it to the bowl, cover & let it rest for about an hour until doubled in size",
     },
     {
-      content: "Meanwhile, make the filling: add the tofu to a baking tray, drizzle lightly with oil & bake at 200°C for 25-30 minutes until golden & crispy in parts (you want various textures)",
+      content:
+        "Meanwhile, make the filling: add the tofu to a baking tray, drizzle lightly with oil & bake at 200°C for 25-30 minutes until golden & crispy in parts (you want various textures)",
     },
     {
-      content: "Mix the chilli oil, tamari, agave, rice vinegar, water & cornstarch together to make the sauce mix & set aside",
+      content:
+        "Mix the chilli oil, tamari, agave, rice vinegar, water & cornstarch together to make the sauce mix & set aside",
     },
     {
       content:
         "Sauté the spring onion & garlic for 1-2 minutes until fragrant then pour in the sauce mix. simmer until thickened then add the tofu, stir so everything is coated then set aside to cool before using",
     },
     {
-      content: "When the dough has risen, transfer to a clean surface, divide it into 8 equal balls & roll each one out into approximately 1/4 thick discs",
+      content:
+        "When the dough has risen, transfer to a clean surface, divide it into 8 equal balls & roll each one out into approximately 1/4 thick discs",
     },
     {
-      content: "Place about & tablespoon of filling in the centre of a disc then fold the edges up, pinching to seal until you have a secure bun",
+      content:
+        "Place about & tablespoon of filling in the centre of a disc then fold the edges up, pinching to seal until you have a secure bun",
     },
     {
       content:
         "Add the buns to a pan over a medium heat with enough oil to coat the bottom of the pan, pour in enough water to line the bottom then cover immediately (it will spit) & steam for 10 minutes",
     },
     {
-      content: "Remove the lid & keep frying until the bottoms are golden & crisp then serve topped with chilli oil, spring onion & sesame seeds",
+      content:
+        "Remove the lid & keep frying until the bottoms are golden & crisp then serve topped with chilli oil, spring onion & sesame seeds",
     },
   ],
   title: "Chilli garlic tofu bao",

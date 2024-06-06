@@ -1,7 +1,11 @@
 import Recipe from "@/components/Recipe";
 import { recipes } from "@/data/recipes";
 
-export default async function RecipeRoute({ params }: { params: { slug: string } }) {
+export default async function RecipeRoute({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const recipe = recipes.find((recipe) => recipe.slug === params.slug);
 
   if (!recipe) {

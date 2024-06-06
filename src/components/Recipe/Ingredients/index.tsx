@@ -32,10 +32,17 @@ export default function Ingredients() {
                 id={ingredient.name}
                 type="checkbox"
                 onChange={(event) => {
-                  setCheckedIngredients((currentChecked) => (event.target.checked ? [...currentChecked, ingredient.name] : currentChecked.filter((id) => id !== ingredient.name)));
+                  setCheckedIngredients((currentChecked) =>
+                    event.target.checked
+                      ? [...currentChecked, ingredient.name]
+                      : currentChecked.filter((id) => id !== ingredient.name)
+                  );
                 }}
               />
-              <ConditionalWrapper condition={isChecked} wrapper={(children) => <s>{children}</s>}>
+              <ConditionalWrapper
+                condition={isChecked}
+                wrapper={(children) => <s>{children}</s>}
+              >
                 <label htmlFor={ingredient.name}>
                   {ingredient.quantity}
                   {
@@ -59,7 +66,9 @@ export default function Ingredients() {
         Check off the ingredients you have, or{" "}
         <S.CheckAll
           onClick={() => {
-            setCheckedIngredients(ingredients.map((ingredient) => ingredient.name));
+            setCheckedIngredients(
+              ingredients.map((ingredient) => ingredient.name)
+            );
           }}
           type="button"
         >

@@ -11,7 +11,9 @@ interface RelatedProps {
 }
 
 export default function Related({ related }: RelatedProps) {
-  const relatedRecipes = related.map((slug) => recipes.find((recipe) => recipe.slug === slug)).filter(isNotNullish);
+  const relatedRecipes = related
+    .map((slug) => recipes.find((recipe) => recipe.slug === slug))
+    .filter(isNotNullish);
 
   return (
     <section>

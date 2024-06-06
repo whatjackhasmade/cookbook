@@ -3,7 +3,8 @@ import { MeasurementUnit, RecipeSlug } from "@/enums";
 import { Recipe } from ".";
 
 const recipe: Recipe = {
-  description: "A rich and luxurious veggie-packed bolognese. You won't miss the meat in this beauty.",
+  description:
+    "A rich and luxurious veggie-packed bolognese. You won't miss the meat in this beauty.",
   emojis: "🍄 🍝",
   ingredients: [
     {
@@ -43,8 +44,8 @@ const recipe: Recipe = {
     },
     {
       // eslint-disable-next-line sort-keys
-name: "All purpose seasoning",
-      
+      name: "All purpose seasoning",
+
       optional: true,
       quantity: "1 pinch",
       unit: MeasurementUnit.Count,

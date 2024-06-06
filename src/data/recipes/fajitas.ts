@@ -34,10 +34,12 @@ const recipe: Recipe = {
   slug: RecipeSlug.Fajitas,
   steps: [
     {
-      content: "In a large bowl, whisk together the flour, salt, and baking powder",
+      content:
+        "In a large bowl, whisk together the flour, salt, and baking powder",
     },
     {
-      content: "Add olive oil to the bowl and mix until the oil is distrubuted into small clumps",
+      content:
+        "Add olive oil to the bowl and mix until the oil is distrubuted into small clumps",
     },
     {
       content: "Add warm water to the bowl and mix until a dough forms",
@@ -46,10 +48,12 @@ const recipe: Recipe = {
       content: "Knead the dough for 5 minutes or until smooth",
     },
     {
-      content: "Cover the dough with a damp towel and let it rest for 30 minutes",
+      content:
+        "Cover the dough with a damp towel and let it rest for 30 minutes",
     },
     {
-      content: "Divide the dough into equal pieces (I usually make 6) and roll each piece into a ball",
+      content:
+        "Divide the dough into equal pieces (I usually make 6) and roll each piece into a ball",
     },
     {
       content: "Roll out each ball into a thin circle with a rolling pin",
@@ -58,10 +62,12 @@ const recipe: Recipe = {
       content: "Heat a skillet over the highest heat possible",
     },
     {
-      content: "Get a plate and kitchen towl ready, you will stack the cooked tortillas in a pile on the plate",
+      content:
+        "Get a plate and kitchen towl ready, you will stack the cooked tortillas in a pile on the plate",
     },
     {
-      content: "When the skillet is hot, add a tortilla and cook for 20-30 seconds on each side",
+      content:
+        "When the skillet is hot, add a tortilla and cook for 20-30 seconds on each side",
     },
   ],
   title: "Fajitas",

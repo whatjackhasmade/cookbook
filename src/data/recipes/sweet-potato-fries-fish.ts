@@ -68,10 +68,12 @@ const recipe: Recipe = {
       content: "Peel and cut the sweet potatoes into fries",
     },
     {
-      content: "Place the sweet potatoes on a baking tray and drizzle with olive oil",
+      content:
+        "Place the sweet potatoes on a baking tray and drizzle with olive oil",
     },
     {
-      content: "Add salt, pepper and all purpose seasoning to the sweet potatoes",
+      content:
+        "Add salt, pepper and all purpose seasoning to the sweet potatoes",
     },
     {
       content: "Bake the sweet potatoes for 5 minutes",
@@ -80,7 +82,8 @@ const recipe: Recipe = {
       content: "Add the fish to the baking tray and bake for 25 minutes",
     },
     {
-      content: "Serve the sweet potatoes and fish with mayonnaise or sweet chilli sauce",
+      content:
+        "Serve the sweet potatoes and fish with mayonnaise or sweet chilli sauce",
     },
   ],
   title: "Sweet potato fries and fish",
