@@ -11,10 +11,10 @@ import {
 
 interface RecipeContextType {
   checkedIngredients: string[];
-  recipe: Recipe;
   goToNextStage: () => void;
   goToPreviousStage: () => void;
   goToStage: (stage: number) => void;
+  recipe: Recipe;
   setCheckedIngredients: Dispatch<SetStateAction<string[]>>;
   stage: number;
 }
@@ -25,8 +25,8 @@ export const RecipeProvider = ({
   recipe,
   children,
 }: {
-  recipe: Recipe;
   children: ReactNode;
+  recipe: Recipe;
 }) => {
   const [stage, setStage] = useState(0);
   const [checkedIngredients, setCheckedIngredients] = useState<string[]>([]);

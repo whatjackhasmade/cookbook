@@ -5,18 +5,17 @@ import Link from "next/link";
 import * as S from "./styles";
 
 export default function Recipes() {
-  return (
-    <>
-      {recipes.map((recipe) => (
-        <S.Item key={recipe.slug}>
-          <h2>
-            <span role="img">{recipe.emojis}</span> ~ {recipe.title}
-          </h2>
-          <Link href={`/recipes/${recipe.slug}`}>
-            <VisuallyHidden>{recipe.title}</VisuallyHidden>
-          </Link>
-        </S.Item>
-      ))}
-    </>
-  );
+	return (
+		<S.Items>
+			{recipes.map((recipe) => (
+				<S.Item key={recipe.slug}>
+					<S.Emojis role="img">{recipe.emojis}</S.Emojis>
+					<S.Title>{recipe.title}</S.Title>
+					<Link href={`/recipes/${recipe.slug}`}>
+						<VisuallyHidden>{recipe.title}</VisuallyHidden>
+					</Link>
+				</S.Item>
+			))}
+		</S.Items>
+	);
 }

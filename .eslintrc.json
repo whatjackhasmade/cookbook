@@ -1,7 +1,10 @@
 {
-  "extends": "next/core-web-vitals",
-  "plugins": ["sort-keys-fix"],
-  "rules": {
-    "sort-keys-fix/sort-keys-fix": "warn"
-  }
+	"extends": "next/core-web-vitals",
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["sort-keys-fix", "typescript-sort-keys"],
+	"rules": {
+		"sort-keys-fix/sort-keys-fix": "warn",
+		"typescript-sort-keys/interface": "warn",
+		"typescript-sort-keys/string-enum": "warn"
+	}
 }
